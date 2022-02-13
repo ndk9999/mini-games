@@ -82,7 +82,7 @@ namespace Loto.ConsoleUI
 				Console.ForegroundColor = color;
 
 				Console.SetCursorPosition(75, i + 28);
-				Console.Write("+ Player {0}: [{1}]", winners[i].Name, string.Join(",", winners[i].GetWinNumbers()));
+				Console.Write("+ Nguoi choi '{0}': [{1}]", winners[i].Name, string.Join(",", winners[i].GetWinNumbers()));
 			}
 
 			Console.SetCursorPosition(0, 92);
