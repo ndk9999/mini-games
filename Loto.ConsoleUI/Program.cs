@@ -15,6 +15,7 @@ namespace Loto.ConsoleUI
 		static void Main(string[] args)
 		{
 			Console.SetBufferSize(300, 100);
+			Console.Clear();
 
 			//var ballots = BallotGenerator.Generate();
 
@@ -58,6 +59,8 @@ namespace Loto.ConsoleUI
 			game.WinnersFound += (sender, eventArgs) => DisplayWinners(eventArgs.TotalStep, eventArgs.Winners);
 
 			game.Start();
+
+			Console.ReadKey();
 		}
 
 		private static void DisplayStep(int step, int number)
